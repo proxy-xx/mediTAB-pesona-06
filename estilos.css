@@ -1,0 +1,101 @@
+/* Tipografía y estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdfdfd;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Logo */
+.logo {
+  display: block;
+  max-width: 120px;
+  margin: 0 auto 20px auto;
+}
+
+/* Títulos */
+h2, h3 {
+  text-align: center;
+  margin: 5px 0;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Datos Generales */
+.datos-generales p {
+  margin: 6px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* Secciones */
+.seccion {
+  border: 2.5px solid;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #fafafa;
+}
+
+.seccion h4 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+.roja {
+  border-color: #e74c3c;
+}
+
+.azul {
+  border-color: #3498db;
+}
+
+.naranja {
+  border-color: #f39c12;
+}
+
+.verde {
+  border-color: #27ae60;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.alergias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 5px;
+  font-size: 0.95rem;
+}
+
+/* Adaptabilidad */
+@media (max-width: 480px) {
+  .contenedor {
+    padding: 15px;
+  }
+
+  .logo {
+    max-width: 90px;
+  }
+
+  .datos-generales p, .seccion h4, ul, .alergias div {
+    font-size: 0.95rem;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+}
